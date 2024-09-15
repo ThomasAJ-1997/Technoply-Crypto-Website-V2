@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Technopoly Crypto Marketplace</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+
+    <div class="navbar">
+      <input type="checkbox" id="check" class="checkbox" hidden>
+      <div class="hamburger-menu">
+          <label for="check" class="menu">
+              <div class="menu-line menu-line-1"></div>
+              <div class="menu-line menu-line-2"></div>
+              <div class="menu-line menu-line-3"></div>
+              </label>
+      </div>
+      <div class="navbar-navigation">
+     
+          <div class="navbar-navigation-left">   
+            <h1 class="overlay-heading">Technoply</h1>
+            <p class="overlay-application-text">
+              Technoply is an ideal choice for beginners in the Crypto space, and now is a great time to start with us. Our application offers a simple, no nonense and easy to use interface to track the crypto currency marketplace with beginner friendly features -- which allows you to build your understanding of the crypto space without feeling overwhelmed. Now, we're currently expanding our reach and pushing the service further.
+            </p>
+            <img class="left-img left-img-1" src="../images/Screenshot 2024-09-11 at 12.22.20.png" alt="Technoply application image">
+            <img class="left-img left-img-2" src="../images/Screenshot 2024-09-11 at 12.22.06.png" alt="Technoply application image">
+            <img class="left-img left-img-3" src="../images/Screenshot 2024-09-11 at 12.22.47.png" alt="Technoply application image">
+       
+          </div>
+          <div class="navbar-navigation-right">
+              <ul class="nav-list">
+                  <li class="nav-list-item">
+                      <a href="../index.html" class="nav-list-link">Home</a> 
+                  </li>
+                  <li class="nav-list-item">
+                      <a href="./pages/charts.html" class="nav-list-link">Charts (WIP)</a> 
+                  </li>
+                  <li class="nav-list-item">
+                      <a href="./pages/search.html" class="nav-list-link">Search</a> 
+                  </li>
+           
+              </ul>
+          </div>
+      </div>
+      </div>
+
+
+    <!-- Global Banner Section -->
+    <section class="hero">
+      <div class="global-section">
+        <p>Coins: <b id="coinsID">N/A</b></p>
+        <p>Exchange: <b id="exchangeID">N/A</b></p>
+        <p class="market-cap">
+          Market Cap:
+          <span
+            ><b id="marketID">N/A</b>
+            <span id="marketChangeID"
+              >N/A <i class="ri-arrow-down-s-fill"></i></span
+          ></span>
+        </p>
+        <p>24H Vol: <b id="volumeID">N/A</b></p>
+        <p>Dominance: <b id="dominanceID">BTC N/A% - ETH N/A%</b></p>
+      </div>
+
+      <header>
+        <div class="navigation-bar-left-side">
+          <a href="/index.html" class="logo">Technoply.</a>
+        </div>
+        <nav>
+          <ul class="navigation-bar-links">
+
+          </ul>
+        </nav>
+        <div class="search-box">
+        <form class="searchForm" id="searchFormID">
+          <!-- <i class="ri-search-line search-icon"></i> -->
+          <input
+            type="text"
+            id="searchInputID"
+            placeholder="Search Market..."
+            required
+            autofocus="off"
+          />
+        </div>
+        </form>
+      </header>
+
+      <h3 class="search-text" id="searchHeadingID">Search Results for "bit"</h3>
+      <div class="search-container">
+        <div class="item">
+          <h4>Asset Results</h4>
+          <div id="coins-listID"></div>
+          <div class="spinner" id="coins-list-spinner"></div>
+          <div class="error-message" id="coins-list-error">
+            
+          </div>
+        </div>
+        <div class="item">
+          <h4>Exchange Results</h4>
+          <div id="exchanges-listID"></div>
+          <div class="spinner" id="exchange-list-spinner"></div>
+          <div class="error-message" id="exchange-list-error">
+           
+          </div>
+        </div>
+
+        <div class="item">
+          <h4>NFT Results</h4>
+          <div id="nfts-listID"></div>
+          <div class="spinner" id="nfts-list-spinner"></div>
+          <div class="error-message" id="nfts-list-error">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+
+
+
+   
+  <script src="/js/search.js"></script>
+    <script src="/js/global.js"></script>
+  </body>
+</html>

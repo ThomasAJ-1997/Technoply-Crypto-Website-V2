@@ -1,0 +1,61 @@
+.img {
+  width: 10rem;
+  object-fit: cover;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+#shadow {
+  position: absolute;
+  width: 20rem;
+  height: 2rem;
+  top: 80%;
+  left: 50%;
+  margin-top: 10rem;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  filter: blur(3px);
+  animation: shrink 3s ease-out infinite;
+}
+
+@keyframes shrink {
+  0% {
+    width: 25%;
+  }
+  50% {
+    width: 40%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+/////////////////////////////////////////////////////
+/// SPINNER
+// Loading API Spinner Animation //
+.spinner {
+  //   display: flex;
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  border: 6px solid $background-color-secondary;
+  border-top: 6px solid $background-color-dark;
+  border-radius: 50%;
+  margin: 1rem auto 2rem;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate((360deg));
+  }
+}

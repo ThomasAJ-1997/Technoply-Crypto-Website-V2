@@ -1,0 +1,925 @@
+// EXTERNAL LIBARIES
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sedan+SC&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+// SCSS IMPORTS
+@import "./search.scss";
+@import "./variables.scss";
+@import "./animations.scss";
+@import "./overlay.scss";
+//////////////////////////////////////
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 67.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #02010a;
+}
+
+.red {
+  color: red !important;
+}
+
+.green {
+  color: green !important;
+}
+
+p.red {
+  font-weight: 600 !important;
+}
+
+a {
+  color: $color-white;
+  text-decoration: none;
+}
+
+i {
+  color: $color-white;
+  font-size: 1.5rem;
+}
+
+.global-section {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 0.75rem;
+  background: transparent;
+}
+
+.global-section p {
+  color: $color-white;
+  font-family: "Roboto Mono", monospace;
+  transition: all 0.3s ease-out;
+}
+
+.global-section p:hover {
+  transform: scale(140%);
+}
+
+.market-cap {
+  margin-top: -0.4rem;
+}
+
+//////////////////////////////////////
+/// HERO SECTION
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom left, black, hsl(234, 89%, 14%));
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 10%;
+}
+
+.navigation-bar-left-side .logo {
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+  cursor: pointer;
+}
+
+.navigation-bar-links li {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.navigation-bar-links li,
+a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 1.4rem;
+  border-radius: 1.2rem;
+  color: $color-white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+.navigation-bar-links li,
+a:hover {
+  color: $color-links;
+}
+
+.searchForm {
+  position: relative;
+}
+
+.searchForm input {
+  width: 135%;
+  padding: 1rem;
+  border: 1px solid #ffffff;
+  background: $background-color-dark;
+  border-radius: 1rem;
+  outline: none;
+  color: $color-white;
+  font-size: 1.2rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-heading {
+  @include primaryHeading($color-white, 5rem, uppercase);
+}
+
+.hero-heading-2 {
+  @include primaryHeading(transparent, 7rem, uppercase);
+  @include primaryHeadingStyles();
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 4rem;
+}
+
+////////////////////////////////////////////////
+/// ABOUT US SECTION
+
+.about-us {
+  width: 100vw;
+  height: 90vh;
+  background-image: linear-gradient(to top left, black, hsl(234, 89%, 14%));
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.secondary-heading {
+  @include primaryHeading(transparent, 2.75rem, none);
+  @include primaryHeadingStyles();
+  text-align: center;
+  padding: 0 20rem;
+}
+
+.secondary-heading::before {
+  content: "With ";
+  color: $color-white;
+  text-align: center;
+}
+
+.secondary-heading::after {
+  content: " have access to real time analytics on the Crypto Marketplace. You can:";
+  color: $color-white;
+  text-align: center;
+}
+
+.about-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 75vw;
+  gap: 15rem;
+
+  &-features {
+    margin-top: 8rem;
+  }
+
+  &-description {
+    color: $color-white;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.6rem;
+    margin-top: 4rem;
+    line-clamp: 3;
+  }
+}
+
+.icon-image {
+  font-size: 4rem;
+  padding: 0.75rem;
+  background-image: linear-gradient(
+    to bottom left,
+    hsl(281, 62%, 49%) 40%,
+    hsl(242, 84%, 45%)
+  );
+}
+
+///////////////////////////////////////////////////
+///
+
+.third-heading {
+  @include primaryHeading(transparent, 2.75rem, none);
+  @include primaryHeadingStyles();
+  text-align: center;
+  padding: 2rem 20rem;
+}
+//////////////////////////////////////////////////////
+/// TRENDING SECTION
+.api-section-coins {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom left, black, hsl(234, 89%, 14%));
+}
+
+.api-section-nfts {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top left, black, hsl(234, 89%, 14%));
+}
+
+.third-heading::before {
+  content: "Trending ";
+  color: $color-white;
+}
+.trending .coins-wrapper,
+.trending .nfts-wrapper,
+.tab-content {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin: auto;
+}
+
+.trending .coins-wrapper .trending-container,
+.trending .nfts-wrapper .trending-container,
+.tab-content {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.1px);
+  -webkit-backdrop-filter: blur(1.1px);
+  border: 1px solid
+    linear-gradient(to bottom left, hsl(281, 62%, 49%) 40%, hsl(242, 84%, 45%));
+}
+
+.trending table,
+.tab-container .tab-content table,
+.search-container .item table {
+  width: 100%;
+  padding: 0 20rem;
+}
+
+.trending table tr td {
+  padding: 2rem 0;
+}
+
+.trending table th,
+.tab-container .tab-content table th,
+.search-container .item table th {
+  color: $color-white;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-family: "Roboto Mono", monospace;
+  text-align: left;
+  padding-bottom: 1rem;
+  background-image: purple;
+}
+
+.trending table tr td,
+.tab-content table tr td {
+  color: $text-color-secondary;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+}
+
+.tab-content table td td {
+  padding: 5rem;
+}
+
+.trending .coins-wrapper table tr,
+.tab-container .tab-content #asset-list table tr,
+.search-container .item #coins-listID table tr {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.application-section {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom left, black, hsl(234, 89%, 14%));
+}
+
+.fourth-heading {
+  @include primaryHeading(transparent, 2.75rem, none);
+  @include primaryHeadingStyles();
+  text-align: center;
+  padding: 0 20rem;
+}
+
+.fourth-heading::before {
+  content: "Our ";
+  color: $color-white;
+}
+
+.application-wrapper {
+  margin: auto;
+  width: 75%;
+  height: 80vh;
+}
+
+video {
+  width: 100%;
+  background-size: cover;
+  background-position: middle;
+  margin-top: 2rem;
+}
+
+.fifth-heading {
+  @include primaryHeading(transparent, 2.75rem, none);
+  @include primaryHeadingStyles();
+  text-align: left;
+}
+
+.fifth-heading::before {
+  content: "Coming ";
+  color: $color-white;
+}
+
+.application-text {
+  color: $color-white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.6rem;
+  margin-top: 4rem;
+  line-clamp: 3;
+}
+
+///////////////////////////////////////////////////
+/// APPLICAION INFORMATION SECTION
+.application-information {
+  width: 100vw;
+  height: 75vh;
+  background-image: linear-gradient(to top left, black, hsl(234, 89%, 14%));
+}
+
+.application-information-container {
+  margin: auto;
+  width: 75%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.application-information-container .about-box {
+  margin-top: 8rem;
+}
+//////////////////////////////////////////////////
+// TABS SECTION
+
+.api-section-analytics {
+  width: 100vw;
+  height: 150vh;
+  background-image: linear-gradient(to bottom left, black, hsl(234, 89%, 14%));
+}
+
+.sixth-heading {
+  @include primaryHeading(transparent, 2.75rem, none);
+  @include primaryHeadingStyles();
+  text-align: center;
+  padding: 0 20rem;
+}
+
+.sixth-heading::before {
+  content: "Technoply ";
+  color: $color-white;
+}
+
+.tab-container {
+  margin: auto;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.tab-container .tabs {
+  background-color: transparent;
+  display: inline-flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 1.2rem;
+  margin-bottom: 3rem;
+  // border: 1px solid white;
+}
+
+.tab-container .tabs .tab-button {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  background: transparent;
+  color: $text-color-secondary;
+  font-size: 1.4rem;
+  font-family: "Roboto Mono", monospace;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-container .tabs .tab-button:hover {
+  color: $color-links;
+}
+
+.tab-container .tabs .tab-button i {
+  font-size: 2rem;
+  color: $text-color-secondary;
+  transition: all 0.3s ease;
+  margin-right: -4.2rem;
+}
+
+.tab-container .tabs .tab-button.active,
+.tab-container .tabs .tab-button.active i {
+  color: $color-white;
+  font-weight: 700;
+  font-size: large;
+}
+
+.api-container-2 {
+  height: 100%;
+  margin-bottom: 3rem;
+  background-image: linear-gradient(to bottom left, black, hsl(234, 89%, 14%));
+}
+
+.tab-content {
+  width: 90%;
+  height: 130vh;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.1px);
+  -webkit-backdrop-filter: blur(1.1px);
+  border: 1px solid
+    linear-gradient(to bottom left, hsl(281, 62%, 49%) 40%, hsl(242, 84%, 45%));
+}
+
+.table-fixed-column img {
+  height: 3rem;
+  display: flex;
+}
+
+////////////////////////////////////////////
+
+// FOOTER SECTION
+
+.footer-section {
+  background-image: linear-gradient(to bottom left, black, hsl(234, 89%, 14%));
+  width: 100%;
+  height: 10vh;
+
+  padding: 1.6rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $color-border-dark;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.footer-section p {
+  color: $text-color-secondary;
+  font-size: 1.3rem;
+}
+
+.footer-section .social-icons,
+.overlay .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-section .social-icons a i,
+.overlay .social-icons a i {
+  font-size: 2.6rem;
+  // margin: 4rem;
+  // color: $color-white;
+}
+
+.footer-section .social-icons a,
+.overlay .social-icons a {
+  background: $background-color-primary;
+  padding: 8px;
+  border-radius: 1.2rem;
+  border: 1px solid $color-border;
+  transition: all 0.3s ease;
+}
+
+.footer-section .social-icons a:hover,
+.overlay .social-icons a:hover {
+  background: $color-links;
+}
+///////////////////////////////////////
+
+///////////////////////////////////////
+@media screen and (max-width: 1200px) {
+  .tab-content table {
+    width: 100%;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .about-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .global-section {
+    gap: 3rem;
+  }
+
+  .global-section p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .secondary-heading {
+    font-size: 2rem;
+    margin-bottom: 8rem;
+  }
+
+  .about-container .secondary-heading {
+    margin-top: -65rem;
+  }
+
+  nav .navigation-right-section {
+    gap: 2rem;
+  }
+
+  .trending {
+    flex-direction: column;
+    gap: 3.6rem;
+  }
+
+  .trending .coins-wrapper,
+  .trending .nfts-wrapper {
+    width: 100%;
+  }
+
+  .footer-section {
+    width: 100%;
+    padding: 1.6rem 9rem;
+  }
+
+  .tab-content #category-list,
+  .tab-content #company-list {
+    overflow-x: scroll;
+  }
+
+  .tab-content #category-list table,
+  .tab-content #company-list table {
+    width: 100%;
+  }
+  #asset-list table,
+  #exchange-list table {
+    width: 200%;
+  }
+
+  .search-container {
+    flex-wrap: wrap;
+  }
+
+  .search-container .item:nth-child(1),
+  .search-container .item:nth-child(2) {
+    width: 48%;
+  }
+
+  .search-container .item:nth-child(3) {
+    width: 100%;
+  }
+
+  .search-container .item:nth-child(3) h4 {
+    margin: 1rem 0 2rem;
+    border-top: 1px dashed $color-border;
+    padding-top: 2rem;
+  }
+
+  .about-container {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+
+  .about-container .image {
+    text-align: center;
+  }
+
+  .about-container .image img {
+    width: 60%;
+  }
+
+  .coin-container .coins-left-section {
+    width: 100%;
+  }
+
+  .coin-container .coins-main-section {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .coin-container .coins-right-section {
+    flex-wrap: wrap;
+  }
+
+  .coin-container .coins-right-section .status:first-child {
+    width: 100%;
+  }
+
+  .coin-container .coins-right-section .status {
+    width: 48%;
+  }
+
+  .coin-container .coins-right-section > h3 {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .global-section p:last-child {
+    display: none;
+  }
+
+  nav .navigation-right-section {
+    width: 65%;
+  }
+
+  nav .navigation-left-section {
+    gap: 1rem;
+  }
+
+  nav .navigation-left-section .navigation-links {
+    display: none;
+  }
+
+  #buttonOpenMenu {
+    display: flex;
+  }
+
+  .tab-container .tabs {
+    flex-wrap: wrap;
+    gap: 1rem 0;
+  }
+
+  .tab-container .tab-button {
+    width: 50%;
+  }
+
+  #asset-list table,
+  #exchange-list table,
+  .tab-content #category-list table {
+    width: 300%;
+  }
+
+  .tab-content #company-list table {
+    width: 250%;
+  }
+
+  .tab-content #company-list tr td.name-column {
+    width: 120px;
+  }
+
+  .footer-section {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .footer-section p {
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+}
+
+///////////////////////////////////////////////////
+@media screen and (max-width: 2450px) {
+  .search-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-container .item:nth-child(1),
+  .search-container .item:nth-child(2) {
+    width: 60%;
+  }
+
+  .search-container .item:nth-child(3) {
+    width: 100%;
+  }
+
+  .search-container .item:nth-child(3) h4 {
+    margin: 1rem 0 2rem;
+    border-top: 1px dashed white;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .search-container {
+    justify-content: left;
+  }
+
+  .search-container .item:nth-child(1),
+  .search-container .item:nth-child(2) {
+    width: 100%;
+  }
+
+  .search-container .item:nth-child(1) table,
+  .search-container .item:nth-child(2) table,
+  .search-container .item:nth-child(3) table {
+    padding-left: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .coins-wrapper table,
+  .nfts-wrapper table,
+  #asset-list table,
+  #exchange-list table {
+    width: 150%;
+  }
+
+  .trending .coins-wrapper .trending-container,
+  .trending .nfts-wrapper .trending-container,
+  .tab-content #asset-list,
+  .tab-content #exchange-list {
+    overflow-x: scroll;
+  }
+
+  table tr td.name-column {
+    max-width: 160px;
+    padding-right: 50px;
+  }
+
+  .secondary-heading {
+    padding: 0 12rem;
+  }
+
+  .about-box {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .api-section-analytics {
+    padding-top: 25rem;
+  }
+
+  .tab-content {
+    height: 160vh;
+  }
+
+  .footer-section {
+    margin-top: 50rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1048px) {
+  .hero-heading {
+    font-size: 4rem;
+  }
+
+  .hero-heading-2 {
+    font-size: 5.5rem;
+  }
+
+  .img {
+    width: 7.5rem;
+  }
+
+  #shadow {
+    margin: 0;
+  }
+
+  .tab-container .tab-content table th {
+    justify-content: left;
+  }
+
+  .tab-container .tab-content table th {
+    padding: 0 2rem;
+  }
+
+  .trending .coins-wrapper .trending-container table th,
+  .trending .nfts-wrapper .trending-container table th {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 941px) {
+  .about-container .secondary-heading {
+    margin-top: -70rem;
+  }
+
+  .application-information-container .about-box {
+    margin-top: 12rem;
+  }
+
+  .api-section-coins {
+    margin-top: 20rem;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .hero-heading {
+    font-size: 3rem;
+  }
+
+  .hero-heading-2 {
+    font-size: 4.5rem;
+  }
+  .searchForm {
+    margin-right: 4rem;
+  }
+
+  .img {
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 811px) {
+  .third-heading {
+    margin-bottom: 2rem;
+  }
+
+  .about-box {
+    gap: 1.5rem;
+  }
+
+  .application-section .fourth-heading {
+    margin-top: 8rem;
+  }
+  .secondary-heading,
+  .third-heading,
+  .fourth-heading,
+  .fifth-heading,
+  .sixth-heading {
+    font-size: 1.75rem;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 737px) {
+  .about-container .secondary-heading {
+    margin-top: -115rem;
+    font-size: 1.75rem;
+    padding: 0 8rem;
+  }
+
+  .about-box {
+    grid-template-columns: 1fr;
+  }
+
+  .api-section-coins {
+    margin-top: 70rem;
+  }
+
+  .application-information-container .about-box {
+    padding-top: 10rem;
+  }
+
+  .api-section-analytics {
+    margin-top: 45rem;
+  }
+
+  .tabs {
+    margin-left: 8rem;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .hero-heading-2 {
+    font-size: 3rem;
+  }
+
+  .footer-section {
+    margin-top: 60rem;
+  }
+}

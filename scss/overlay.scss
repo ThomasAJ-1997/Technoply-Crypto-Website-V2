@@ -1,0 +1,264 @@
+@import "./variables.scss";
+
+%fullSpace {
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger-menu {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  z-index: 300;
+}
+
+.hamburger-menu {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  z-index: 300;
+
+  .menu {
+    @extend %fullSpace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: transform 0.7s;
+
+    &-line {
+      width: 100%;
+      height: 0.4rem;
+      background-color: $color-white;
+      transform-origin: right;
+      transition: all 0.5s 0.5s;
+    }
+  }
+}
+
+.navbar {
+  position: relative;
+  z-index: 200;
+
+  &-navigation {
+    display: flex;
+
+    &-left {
+      width: 50%;
+      height: 100vh;
+      background-image: linear-gradient(to top left, black, hsl(234, 89%, 14%));
+      position: fixed;
+      left: -50vw;
+      transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+
+      .left-img {
+        width: 30rem;
+        position: absolute;
+        box-shadow: 0 1.5rem 6rem rgba(black, 5.7);
+        border-radius: 1rem;
+      }
+
+      .left-img-1 {
+        top: 40%;
+        left: 20%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .left-img-2 {
+        top: 50%;
+        left: 30%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .left-img-3 {
+        top: 60%;
+        left: 40%;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    .left-img-1:hover,
+    .left-img-2:hover,
+    .left-img-3:hover {
+      transform: scale(110%);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &-right {
+      width: 50vw;
+      height: 100vh;
+      background-image: linear-gradient(
+        to top right,
+        black,
+        hsl(234, 89%, 14%)
+      );
+      position: fixed;
+      right: -50vw;
+      transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-list {
+      &-item {
+        list-style: none;
+      }
+      &-link {
+        font-family: "Roboto Mono", monospace;
+        font-size: 5rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: center;
+        color: $color-white;
+        text-decoration: none;
+        display: block;
+        margin: 2rem;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          color: $color-links;
+        }
+      }
+    }
+  }
+}
+
+.nav-img {
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-heading {
+  margin-top: 3.2rem;
+}
+
+.heading-primary {
+  text-align: center;
+}
+
+.nav-description {
+  padding: 4rem;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+  left: 0;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+  right: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu {
+  transform: rotateZ(90deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  transform: rotateZ(-40deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  transform: rotateZ(40deg);
+}
+
+@media (max-width: 58em) {
+  .navbar-navigation-left {
+    display: none;
+  }
+
+  .navbar-navigation-right {
+    width: 100%;
+    right: -100vw;
+    transition: all 0.7s ease-in-out;
+    opacity: 0.8;
+  }
+
+  .about-us {
+    margin-bottom: -25rem;
+  }
+
+  .about-us-left {
+    display: none;
+  }
+
+  .about-us-right {
+    width: 75%;
+    margin-left: 8.5rem;
+  }
+}
+
+////////////////////////////////////////////////////////////////
+/// Media Queries (Hamburger-menu)
+///
+@media screen and (max-width: 1088px) {
+  .navigation-bar-links {
+    display: none;
+  }
+}
+
+/// Media Queries (Hamburger-menu)
+///
+@media (max-width: 96.13em) {
+  .left-img-1,
+  .left-img-2,
+  .left-img-3 {
+    transform: translateY(40%);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 78.5em) {
+  .left-img-1,
+  .left-img-2,
+  .left-img-3 {
+    transform: translateY(60%);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 74.13em) {
+  .left-img-1,
+  .left-img-2,
+  .left-img-3 {
+    display: none;
+  }
+
+  .navbar-navigation-left {
+    display: none;
+  }
+
+  .navbar-navigation-right {
+    width: 100%;
+    right: -100vw;
+    transition: all 0.7s ease-in-out;
+    opacity: 0.95;
+  }
+}
+
+.overlay-heading {
+  @include primaryHeading(transparent, 2.75rem, none);
+  @include primaryHeadingStyles();
+  text-align: center;
+  padding: 0 20rem;
+  margin-top: 8rem;
+}
+
+.overlay-application-text {
+  color: $color-white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.6rem;
+  margin-top: 4rem;
+  line-clamp: 3;
+  padding: 0 5rem;
+}

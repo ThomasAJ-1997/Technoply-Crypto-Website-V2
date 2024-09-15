@@ -1,0 +1,38 @@
+$background-color-light: #fff;
+$background-color-dark: #090014;
+$background-color-primary: #130138;
+$background-color-secondary: #eff2f5;
+
+$color-black: #111;
+$color-white: #eee;
+
+$color-border: #d4d4d4;
+$color-text: #55626f;
+$text-color-secondary: #bebebe;
+
+$chart-light-bg: #fff;
+$chart-dark-bg: #050505;
+
+$color-border-light: #d4d4d4;
+$color-border-dark: #333333;
+
+$color-links: #1565c0;
+
+@mixin primaryHeading($color, $font-size, $text-transform) {
+  font-family: "Roboto Mono", monospace;
+  font-size: $font-size;
+  letter-spacing: 4px;
+  color: $color;
+  text-transform: $text-transform;
+  margin-top: 10rem;
+}
+
+@mixin primaryHeadingStyles() {
+  background-image: linear-gradient(
+    to bottom left,
+    hsl(281, 62%, 49%) 40%,
+    hsl(242, 84%, 45%)
+  );
+  -webkit-background-clip: text;
+  margin-top: -1rem;
+}
