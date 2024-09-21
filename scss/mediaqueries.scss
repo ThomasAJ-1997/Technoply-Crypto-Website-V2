@@ -1,0 +1,390 @@
+@import "./variables.scss";
+
+@media screen and (max-width: 2450px) {
+  .search-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-container .item:nth-child(1),
+  .search-container .item:nth-child(2) {
+    width: 60%;
+  }
+
+  .search-container .item:nth-child(3) {
+    width: 100%;
+  }
+
+  .search-container .item:nth-child(3) h4 {
+    margin: 1rem 0 2rem;
+    border-top: 1px dashed white;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .search-container {
+    justify-content: left;
+  }
+
+  .search-container .item:nth-child(1),
+  .search-container .item:nth-child(2) {
+    width: 100%;
+  }
+
+  .search-container .item:nth-child(1) table,
+  .search-container .item:nth-child(2) table,
+  .search-container .item:nth-child(3) table {
+    padding-left: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .coins-wrapper table,
+  .nfts-wrapper table,
+  #asset-list table,
+  #exchange-list table {
+    width: 150%;
+  }
+
+  .trending .coins-wrapper .trending-container,
+  .trending .nfts-wrapper .trending-container,
+  .tab-content #asset-list,
+  .tab-content #exchange-list {
+    overflow-x: scroll;
+  }
+
+  table tr td.name-column {
+    max-width: 160px;
+    padding-right: 50px;
+  }
+
+  .secondary-heading {
+    padding: 0 12rem;
+  }
+
+  .about-box {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .api-section-analytics {
+    padding-top: 25rem;
+  }
+
+  .tab-content {
+    height: 160vh;
+  }
+
+  .footer-section {
+    margin-top: 50rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tab-content table {
+    width: 100%;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .about-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1048px) {
+  .hero-heading {
+    font-size: 4rem;
+  }
+
+  .hero-heading-2 {
+    font-size: 5.5rem;
+  }
+
+  .img {
+    width: 7.5rem;
+  }
+
+  #shadow {
+    margin: 0;
+  }
+
+  .tab-container .tab-content table th {
+    justify-content: left;
+  }
+
+  .tab-container .tab-content table th {
+    padding: 0 2rem;
+  }
+
+  .trending .coins-wrapper .trending-container table th,
+  .trending .nfts-wrapper .trending-container table th {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .global-section {
+    gap: 3rem;
+  }
+
+  .global-section p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .secondary-heading {
+    font-size: 2rem;
+    margin-bottom: 8rem;
+  }
+
+  .about-container .secondary-heading {
+    margin-top: -65rem;
+  }
+
+  nav .navigation-right-section {
+    gap: 2rem;
+  }
+
+  .trending {
+    flex-direction: column;
+    gap: 3.6rem;
+  }
+
+  .trending .coins-wrapper,
+  .trending .nfts-wrapper {
+    width: 100%;
+  }
+
+  .footer-section {
+    width: 100%;
+    padding: 1.6rem 9rem;
+  }
+
+  .tab-content #category-list,
+  .tab-content #company-list {
+    overflow-x: scroll;
+  }
+
+  .tab-content #category-list table,
+  .tab-content #company-list table {
+    width: 100%;
+  }
+  #asset-list table,
+  #exchange-list table {
+    width: 200%;
+  }
+
+  .search-container {
+    flex-wrap: wrap;
+  }
+
+  .search-container .item:nth-child(1),
+  .search-container .item:nth-child(2) {
+    width: 48%;
+  }
+
+  .search-container .item:nth-child(3) {
+    width: 100%;
+  }
+
+  .search-container .item:nth-child(3) h4 {
+    margin: 1rem 0 2rem;
+    border-top: 1px dashed $color-border;
+    padding-top: 2rem;
+  }
+
+  .about-container {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+
+  .about-container .image {
+    text-align: center;
+  }
+
+  .about-container .image img {
+    width: 60%;
+  }
+
+  .coin-container .coins-left-section {
+    width: 100%;
+  }
+
+  .coin-container .coins-main-section {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .coin-container .coins-right-section {
+    flex-wrap: wrap;
+  }
+
+  .coin-container .coins-right-section .status:first-child {
+    width: 100%;
+  }
+
+  .coin-container .coins-right-section .status {
+    width: 48%;
+  }
+
+  .coin-container .coins-right-section > h3 {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 941px) {
+  .about-container .secondary-heading {
+    margin-top: -70rem;
+  }
+
+  .application-information-container .about-box {
+    margin-top: 12rem;
+  }
+
+  .api-section-coins {
+    margin-top: 20rem;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .hero-heading {
+    font-size: 3rem;
+  }
+
+  .hero-heading-2 {
+    font-size: 4.5rem;
+  }
+  .searchForm {
+    margin-right: 4rem;
+  }
+
+  .img {
+    width: 5rem;
+  }
+}
+
+@media screen and (max-width: 811px) {
+  .third-heading {
+    margin-bottom: 2rem;
+  }
+
+  .about-box {
+    gap: 1.5rem;
+  }
+
+  .application-section .fourth-heading {
+    margin-top: 8rem;
+  }
+  .secondary-heading,
+  .third-heading,
+  .fourth-heading,
+  .fifth-heading,
+  .sixth-heading {
+    font-size: 1.75rem;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .global-section p:last-child {
+    display: none;
+  }
+
+  nav .navigation-right-section {
+    width: 65%;
+  }
+
+  nav .navigation-left-section {
+    gap: 1rem;
+  }
+
+  nav .navigation-left-section .navigation-links {
+    display: none;
+  }
+
+  #buttonOpenMenu {
+    display: flex;
+  }
+
+  .tab-container .tabs {
+    flex-wrap: wrap;
+    gap: 1rem 0;
+  }
+
+  .tab-container .tab-button {
+    width: 50%;
+  }
+
+  #asset-list table,
+  #exchange-list table,
+  .tab-content #category-list table {
+    width: 300%;
+  }
+
+  .tab-content #company-list table {
+    width: 250%;
+  }
+
+  .tab-content #company-list tr td.name-column {
+    width: 120px;
+  }
+
+  .footer-section {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .footer-section p {
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 737px) {
+  .about-container .secondary-heading {
+    margin-top: -115rem;
+    font-size: 1.75rem;
+    padding: 0 8rem;
+  }
+
+  .about-box {
+    grid-template-columns: 1fr;
+  }
+
+  .api-section-coins {
+    margin-top: 70rem;
+  }
+
+  .application-information-container .about-box {
+    padding-top: 10rem;
+  }
+
+  .api-section-analytics {
+    margin-top: 45rem;
+  }
+
+  .tabs {
+    margin-left: 8rem;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .hero-heading-2 {
+    font-size: 3rem;
+  }
+
+  .footer-section {
+    margin-top: 60rem;
+  }
+}
