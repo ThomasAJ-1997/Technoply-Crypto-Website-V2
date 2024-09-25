@@ -39,10 +39,18 @@
  <ul> 
  <li> JavaScript displaying and fetching data from Coin Gecko API </li>
  <li> JavaScript displaying interactive charts via Chart.js to represent crypto currency data </li>
- <li> JavaScrupt search engine functionality to find and fetch data </li>
+ <li> JavaScript search engine functionality to find and fetch data </li>
  <li> Original Front End HTML and CSS structure: Serves as a draft. </li>
  </ul>
 
  -----------------------------------------------------------------------------------------------------------------------------------------------------
- <h4> Inspiration for the project </h4>
- <p> The inspiration of Technoply is the Coin Gecko API and Apple Stocks IOS stock application services that fetch and display real-time analytics with visual graphs representing the data which is easy to understand for users to access and use. Alongside my passion for Computer Science, I spend a lot of my spare time learning about finance: reading books, keeping up to date with the stock market and watching content creators who focus on finance content. I decided it was a good idea to take on an ambitious personal project to plan, design and develop a website focused on finance with an emphasis on digital currency and crypto. During development, I didn't have any experience building a website using frameworks and the project was built in Vanilla JavaScript to test my abilities while learning JavaScript through the first half of 2024.  </p>
+ <h3> Inspiration for the project </h3>
+ <p> The inspiration of Technoply is the Coin Gecko API and Apple Stocks IOS stock application services that fetch and display real-time analytics with visual graphs representing the data which is easy to understand for users to access and use. Alongside my passion for Computer Science, I spend a lot of my spare time learning about finance: reading books, keeping up to date with the stock market and watching content creators who focus on finance content. 
+  
+I decided it was a good idea to take on an ambitious personal project to plan, design and develop a website focused on finance with an emphasis on digital currency and crypto. During development, I didn't have any experience building a website using frameworks and the project was built in Vanilla JavaScript to test my abilities while learning JavaScript through the first half of 2024.  </p>
+
+ -----------------------------------------------------------------------------------------------------------------------------------------------------
+ <h3> Website Information Tour </h3>
+ <h4> Landing Page </h4>
+ ![Screenshot 2024-09-25 at 16 42 25](https://github.com/user-attachments/assets/8b274e50-dee4-4343-87f8-f7c60e9a5a56)
+
