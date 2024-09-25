@@ -50,10 +50,9 @@
 I decided it was a good idea to take on an ambitious personal project to plan, design and develop a website focused on finance with an emphasis on digital currency and crypto. During development, I didn't have any experience building a website using frameworks and the project was built in Vanilla JavaScript to test my abilities while learning JavaScript through the first half of 2024.  </p>
 
  -----------------------------------------------------------------------------------------------------------------------------------------------------
- <h3> Website Information Tour </h3>
- <h4> Landing Page </h4>
-![Old1](https://github.com/user-attachments/assets/f34103a4-9ad6-4809-9261-a78dc5ffab4b)
-
+ <h3> Website Project Tour and Information </h3>
+ <h4> Technoply: Version 01 </h4>
+![image_alt][https://github.com/ThomasAJ-1997/Technoply-Crypto-Website-V2/blob/35a6b32d73e415f3699a73430f37e300fa8f273b/screenshots/Old2.png]
 
 
 
