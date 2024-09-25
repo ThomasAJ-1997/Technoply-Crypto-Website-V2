@@ -52,5 +52,6 @@ I decided it was a good idea to take on an ambitious personal project to plan, d
  -----------------------------------------------------------------------------------------------------------------------------------------------------
  <h3> Website Information Tour </h3>
  <h4> Landing Page </h4>
- ![Screenshot 2024-09-25 at 16 42 25](https://github.com/user-attachments/assets/8b274e50-dee4-4343-87f8-f7c60e9a5a56)
+
+
 
