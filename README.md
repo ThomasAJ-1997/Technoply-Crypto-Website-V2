@@ -52,7 +52,8 @@ I decided it was a good idea to take on an ambitious personal project to plan, d
  -----------------------------------------------------------------------------------------------------------------------------------------------------
  <h3> Website Information Tour </h3>
  <h4> Landing Page </h4>
- ![Old1](https://github.com/user-attachments/assets/a8e8b4d2-43c8-4a71-94eb-b0bb145a7304)
+![Old1](https://github.com/user-attachments/assets/f34103a4-9ad6-4809-9261-a78dc5ffab4b)
+
 
 
 
