@@ -29,13 +29,15 @@
  <li> Code Refactoring JavaScript and adding new SCSS </li>
  </ul>
 
- <strong> Version 2.0: Front End UI Refactoring: </strong>
+<strong> Version 2.0: Front End UI Refactoring: </strong>
+
  <ul>
  <li> Developing a new front end UI </li>
  <li> Responsive Website to fit the use of different devices </li>
  </ul>
 
- <strong> Version 1.0: Application Version: Original Version and JavaScript </strong>
+<strong> Version 1.0: Application Version: Original Version and JavaScript </strong>
+
  <ul> 
  <li> JavaScript displaying and fetching data from Coin Gecko API </li>
  <li> JavaScript displaying interactive charts via Chart.js to represent crypto currency data </li>
@@ -43,17 +45,15 @@
  <li> Original Front End HTML and CSS structure: Serves as a draft. </li>
  </ul>
 
- -----------------------------------------------------------------------------------------------------------------------------------------------------
+---
+
  <h3> Inspiration for the project </h3>
  <p> The inspiration of Technoply is the Coin Gecko API and Apple Stocks IOS stock application services that fetch and display real-time analytics with visual graphs representing the data which is easy to understand for users to access and use. Alongside my passion for Computer Science, I spend a lot of my spare time learning about finance: reading books, keeping up to date with the stock market and watching content creators who focus on finance content. 
   
 I decided it was a good idea to take on an ambitious personal project to plan, design and develop a website focused on finance with an emphasis on digital currency and crypto. During development, I didn't have any experience building a website using frameworks and the project was built in Vanilla JavaScript to test my abilities while learning JavaScript through the first half of 2024.  </p>
 
- -----------------------------------------------------------------------------------------------------------------------------------------------------
+---
+
  <h3> Website Project Tour and Information </h3>
  <h4> Technoply: Version 01 </h4>
-![image_alt][https://github.com/ThomasAJ-1997/Technoply-Crypto-Website-V2/blob/35a6b32d73e415f3699a73430f37e300fa8f273b/screenshots/Old2.png]
-
-
-
-
+![image](./screenshots/Old2.png);
